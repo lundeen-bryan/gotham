@@ -32,6 +32,16 @@ input,select{vertical-align:middle}
     src: url('../fonts/ProximaNova-Regular.woff') format('woff'),
          url('../fonts/ProximaNova-Regular.ttf') format('truetype');
 }
+    @font-face {
+        font-family: ProximaNova-Bold;
+        src: url('../fonts/ProximaNova-Bold.woff') format('woff'),
+             url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+    }
+    @font-face {
+        font-family: Roboto-Light;
+        src: url('../fonts/Roboto-Light.ttf') format('truetype'),
+             url('../fonts/Roboto-Light.woff') format('woff');
+    }
 
 body{
     font-size: 16px;
@@ -39,7 +49,7 @@ body{
 }
 /* END OF BODY */
 /* HEADER */
-.page-header{
+.page-header, .page-footer{
     height: 67px;
     width: 100%;
     background-color: rgb(247, 198, 29);
@@ -49,12 +59,12 @@ body{
     height: 100%;
     margin: 0 auto;
 }
-.page-header .wrapper{
+.page-header .wrapper, .page-footer .wrapper{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.page-header nav ul{
+nav ul{
     display: flex;
     justify-content: space-between;
 }
@@ -64,4 +74,129 @@ body{
     text-transform: uppercase;
     text-decoration: none;
     padding: 0 30px;
+}
+/* MAIN */
+.main{
+    display: flex;
+}
+main{
+    width: 77%;
+}
+.right-sidebar{
+    width: 23%;
+}
+img{
+    width: 100%;
+}
+article{
+    display: flex;
+}
+article-left{
+    width: 30%;
+}
+article-right{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    font-family: ProximaNova-Bold;
+    font-size: 24px;
+    /* font-weight: bold; */
+    /* ? no need to bold since the font style is bold */
+}
+article h3{
+    /* title of the article */
+    font-size: 30px;
+    font-family: ProximaNova-Light;
+    font-weight: 350;
+}
+
+.meta, .additional{
+    /* light colored text under title */
+    font-size: 14px;
+    font-family: Roboto-Light;
+    font-weight: lighter;
+    color: rgb(153, 153, 153);
+    display: inline-block;
+    }
+
+.meta>span::after, .additional>span::after{
+    /* upright bar separating elements under title */
+    /* same for the views/comments section */
+    content: "|";
+    display: inline-block;
+    color: rgb(153, 153, 153);
+    padding: 5px 5px;
+}
+
+.meta>span:last-child::after, .additional>.comments:last-child::after{
+    /* last element under title doesn't have a bar */
+    display: none;
+}
+
+.views::before{
+    /* same for the views/comments section using unicode for eye*/
+    content: '\f06e';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 16px;
+    text-align: justify;
+}
+
+.comments::before{
+    content: '\f075';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 16px;
+    text-align: justify;
+    color: rgb(153, 153, 153);    
+}
+.category, .comments{
+    /* the last element is a different color */
+    font-family: Roboto;
+    color: rgb(227, 176, 2);
+    font-weight: 300;
+}
+
+.description{
+    /* description text summing the body of the article */
+    font-family: Roboto-Light;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(85, 85, 85);
+}
+
+/* FOOTER */
+.page-footer{
+    margin: 100px 0;
+}
+.page-footer>.wrapper>*{
+    width: 33.33%;
+}
+.copy{
+    font-family: ProximaNova-Light;
+    font-weight: 300px;
+    font-size: 13px;
+    color: rgb(167, 134, 19);
+}
+.socials{
+    display: flex;
+    justify-content: flex-end;
+}
+.socials a{
+    display: block;
+    border-radius: 50%;
+    background-color:white;
+    width: 45px;
+    height: 45px;
+    color: rgb(247, 198, 29);
+    text-align: center;
+    line-height: 44px;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.footer-nav a{
+    text-decoration: none;
+    color:black;
+    padding: 0 18px;
 }
