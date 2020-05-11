@@ -157,7 +157,7 @@ article h3{
     font-family: 'Font Awesome 5 Free';
     font-size: 16px;
     text-align: justify;
-    color: rgb(153, 153, 153);
+    color: rgb(238, 194, 52);
     margin-right: 12px;
 }
 .views::after{
@@ -175,7 +175,7 @@ article h3{
 .category, .comments{
     /* the last element is a different color */
     font-family: Roboto;
-    color: rgb(227, 176, 2);
+    color: rgb(238, 194, 52);
     font-weight: 300;
 }
 
@@ -189,7 +189,7 @@ article h3{
 .description::after{
     content: ">";
     font-family: Roboto;
-    color: rgb(227, 176, 2);
+    color: rgb(238, 194, 52);
     font-weight: 300;    
 }
 
@@ -203,7 +203,7 @@ article h3{
     font-family: Roboto;
     font-size: 12px;
     text-transform: uppercase;
-    border: 1px solid rgb(227, 176, 2);
+    border: 1px solid #f9cc33; /* rgb(249, 204, 51) */    
     border-radius: 5px;
     text-align: center;
     margin: 0 auto;    
