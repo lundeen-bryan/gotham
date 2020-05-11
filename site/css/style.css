@@ -88,22 +88,37 @@ main{
 img{
     width: 100%;
 }
-article{
-    display: flex;
-}
-article-left{
-    width: 30%;
-}
-article-right{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-}
+/* =============ARTICLES============= */
 h2{
     font-family: ProximaNova-Bold;
     font-size: 24px;
     /* font-weight: bold; */
     /* ? no need to bold since the font style is bold */
+    margin: 45px auto 19px auto;
+}
+article{
+    /* set the article beside the picture using flex */
+    display: flex;
+    margin-bottom: 64px;
+}
+.article-left{
+    /* the image is 30% of the
+     * total space
+    */
+    width: 30%;
+}
+/* =============IMAGE============= */
+.article-left img{
+    /* round the edges of the image border */
+    border-radius: 3px;
+}
+
+.article-right{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    justify-content: space-between;
 }
 article h3{
     /* title of the article */
@@ -118,7 +133,7 @@ article h3{
     font-family: Roboto-Light;
     font-weight: lighter;
     color: rgb(153, 153, 153);
-    display: inline-block;
+    /* display: inline-block; */
     }
 
 .meta>span::after, .additional>span::after{
@@ -128,6 +143,7 @@ article h3{
     display: inline-block;
     color: rgb(153, 153, 153);
     padding: 5px 5px;
+    /* margin: auto 12px; */
 }
 
 .meta>span:last-child::after, .additional>.comments:last-child::after{
@@ -141,6 +157,11 @@ article h3{
     font-family: 'Font Awesome 5 Free';
     font-size: 16px;
     text-align: justify;
+    color: rgb(153, 153, 153);
+    margin-right: 12px;
+}
+.views::after{
+    margin-left: 12px;
 }
 
 .comments::before{
@@ -148,7 +169,8 @@ article h3{
     font-family: 'Font Awesome 5 Free';
     font-size: 16px;
     text-align: justify;
-    color: rgb(153, 153, 153);    
+    color: rgb(153, 153, 153);
+    margin: auto 12px;
 }
 .category, .comments{
     /* the last element is a different color */
@@ -163,6 +185,28 @@ article h3{
     font-size: 16px;
     font-weight: 300;
     color: rgb(85, 85, 85);
+}
+.description::after{
+    content: ">";
+    font-family: Roboto;
+    color: rgb(227, 176, 2);
+    font-weight: 300;    
+}
+
+/* ==============BUTTON============== */
+.more{
+    display: block;
+    width: 171px;
+    height: 43px;
+    background: transparent;
+    color: black;
+    font-family: Roboto;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 1px solid rgb(227, 176, 2);
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;    
 }
 
 /* FOOTER */
