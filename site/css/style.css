@@ -76,7 +76,7 @@ nav ul{
     padding: 0 30px;
 }
 /* MAIN */
-.main{
+.main>.wrapper{
     display: flex;
 }
 main{
@@ -207,6 +207,31 @@ article h3{
     border-radius: 5px;
     text-align: center;
     margin: 0 auto;    
+}
+
+/* ==============RIGHT SIDEBAR============== */
+aside.right-sidebar{
+    padding-top: 79px;
+    padding-left: 75px;
+}
+.search-box{
+    width: 100%;
+    position: relative;
+}
+.search-box label{
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    z-index: 100;
+}
+.search-box input{
+    width: 100%;
+    border-radius: 10px;
+    padding: 8px 10px 8px 32px;
+    outline: none;
+    border: 1px solid rgb(232, 232, 232);
+    font-family: Roboto;
+    font-size: 14px;
 }
 
 /* FOOTER */
