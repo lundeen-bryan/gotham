@@ -22,7 +22,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-/* article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -42,7 +42,7 @@ q:before, q:after {
 }
 table {
 	border-spacing: 0;
-} */
+}
 /* ============================= */
 @font-face {
 	font-family: Roboto;
@@ -179,10 +179,10 @@ article h3 {
 	font-weight: 300;
 	line-height: 1.6;
 }
-.description::after {
+/* .description::after {
 	content: ">";
 	color: #e3b002;
-}
+} */
 .additional {
 	color: #999;
 	font-family: Roboto;
@@ -248,8 +248,6 @@ aside.right-sidebar {
 	font-size: 14px;
 	box-sizing: border-box;
 }
-
-/* ============CALENDAR STARTS========== */
 .calendar-widget {
 	border: 1px solid #e5e5e5;
 	width: 100%;
@@ -267,18 +265,15 @@ aside.right-sidebar {
 .calendar-prev, .calendar-next {
 	color: #e5e5e5;
 }
-
-/* =============TABLE STARTS============ */
 .calendar-widget table {
-	width: calc(100% + 6px);
+	width: calc(100% + 4px);
 	margin-left: -2px;
 	border-radius: 0 0 10px 10px;
 }
 .calendar-widget table th {
 	height: 26px;
 	background: #e7e7e7;
-	/* color: #888; */
-	color: rgb(136, 136, 136);
+	color: #888;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -288,7 +283,6 @@ aside.right-sidebar {
 	vertical-align: middle;
 	border: 1px solid #e5e5e5;
 	color: #e5e5e5;
-	width: calc(100% / 7);
 }
 .calendar-widget tr:last-child td:first-child {
 	border-radius: 0 0 0 10px;
@@ -329,7 +323,7 @@ aside.right-sidebar {
 	height: 1px;
 	border-top: 1px solid #e5e5e5;
 	margin-left: 20px;
-} 
+}
 /* ============================= */
 /* Footer ====================== */
 /* ============================= */
@@ -368,3 +362,16 @@ aside.right-sidebar {
 	color: #000;
 	padding: 0 18px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
