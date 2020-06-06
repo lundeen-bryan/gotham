@@ -1,0 +1,25 @@
+{
+  "name": "Gotham",
+  "version": "1.0.0",
+  "description": "![Project Image](./site/images/screenshot_.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lundeen-bryan/gotham.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lundeen-bryan/gotham/issues"
+  },
+  "homepage": "https://github.com/lundeen-bryan/gotham#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
